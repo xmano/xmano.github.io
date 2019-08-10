@@ -13,17 +13,83 @@
       text-align: center;
       width: 50%;
     }
+
+    .btn {
+      height: 40px;
+      width: 70px;
+      padding: 5px;
+      margin: 5px;
+      border: 2px black;
+      box-sizing: border-box;
+    }
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+  }
+
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
   </style>
 </head>
 <body>
+    <div class="center">
 
     <img src="img/logo.jpg" alt="Sumeru Sandhya" class="center">
 
+    <h1>Payment Options:</h1>
+    <span>
+      <!-- <button style="background: url(img/g-p.png); width: 100px; height: 100px;"></button>
+      <button>PayTM</button> -->
+      <input type="image" class="btn" src="img/g-p.png" onclick="location.href='#gpay'"/>
+      <input type="image" class="btn" src="img/ptm.png" onclick="location.href='#ptm'"/>
+      <input type="image" class="btn" src="img/neft.png" onclick="location.href='#neft'"/>
+    </span>
+
+    <a name="gpay"></a>
     <h2 class="center">Google Pay</h2>
     <img src="img/GPay.jpg" alt="Sumeru Sandhya" class="center">
 
+    <a name="ptm"></a>
     <h2 class="center">PayTM</h2>
     <img src="img/PayTM.jpg" alt="Sumeru Sandhya" class="center">
-    
+
+    <a name="neft"></a>
+    <h2 class="center">NEFT/RTGS/IMPS transfer</h2>
+
+    <table>
+      <tr>
+        <td>Name</td>
+        <td>Vikas Keyal</td>
+      </tr>
+      <tr>
+        <td>Bank</td>
+        <td>Axis Bank</td>
+      </tr>
+      <tr>
+        <td>Account Number (SB)</td>
+        <td>911010050556052</td>
+      </tr>
+      <tr>
+        <td>Branch</td>
+        <td>MG Road, Bangalore</td>
+      </tr>
+      <tr>
+        <td>IFSC</td>
+        <td>UTIB0000009</td>
+      </tr>
+    </table>
+        
+    </div>
+
 </body>
 </html>
